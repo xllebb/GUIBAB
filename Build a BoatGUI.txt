@@ -1,0 +1,127 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+
+local Window = Library.CreateLib('xllebb | Build a Boat', 'RJTheme7')
+
+local Tab = Window:NewTab("АвтоФарм")
+
+
+local Section = Tab:NewSection("Фарм золота")
+
+Section:NewButton("1 локация", "ButtonInfo", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-53.1742401, 21.5754604, 1138.48279, -0.982988834, 0.0261007044, 0.1818012, 0.00079217169, 0.990444124, -0.137912154, -0.183663532, -0.135422081, -0.973616242)
+end)
+Section:NewButton("2 локация", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-68.3134232, 22.6939983, 1779.29126, -0.976379454, 0.0261484645, 0.214474812, -0.0210199356, 0.976445377, -0.214738399, -0.215038031, -0.214174405, -0.952831566)
+end)
+
+Section:NewButton("3 локация", "ButtonInfo", function()   		
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-64.3337479, 1.95718801, 2336.25195, -0.975118995, 0.0299685374, 0.219646975, -0.0207293369, 0.974151969, -0.224940404, -0.22071068, -0.223896801, -0.949292898)
+end)
+
+
+
+
+Section:NewButton("4 локация", "ButtonInfo", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-65.7823486, 8.51015663, 3337.41431, -0.98512578, 0.0195387658, 0.170720488, -0.0133642359, 0.981793225, -0.189482123, -0.171314463, -0.188945264, -0.966928661)
+end)
+
+
+
+Section:NewButton("5 локация", "ButtonInfo", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-83.5777283, 25.7805786, 4093.94946, -0.999391615, -0.00485729706, -0.034536954, 0.00549102807, 0.955991089, -0.293344319, 0.0344418809, -0.293355495, -0.955382824)
+end)
+
+
+
+
+Section:NewButton("6 локация", "ButtonInfo", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-49.7793007, 23.9646225, 4783.13818, -0.999296784, -0.00960657094, -0.0362438038, 0.00156967551, 0.955056369, -0.296420008, 0.037462458, -0.296268463, -0.954369724)
+end)
+
+
+
+
+
+Section:NewButton("7 локация", "ButtonInfo", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-34.1722641, 16.0959072, 5702.44531, -0.999934256, -0.0114095174, 0.00112380995, -0.0114646573, 0.994762421, -0.101569027, 4.09295717e-05, -0.10157524, -0.994827867)
+end)
+
+
+
+Section:NewButton("8 локация", "ButtonInfo", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-78.2800217, 11.2261639, 6389.67871, -0.999931455, -0.00436979253, -0.0108633284, -0.00406390522, 0.99959904, -0.0280221682, 0.0109814238, -0.0279760994, -0.999548256)
+end)
+
+
+
+
+
+
+Section:NewButton("9 локация", "ButtonInfo", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-83.9406281, 29.6273823, 7120.94189, -0.999974489, -0.00437499117, -0.00564240618, -0.00302996789, 0.975611985, -0.219481379, 0.00646502804, -0.219458684, -0.975600362)
+end)
+
+
+
+
+
+Section:NewButton("10 локация", "ButtonInfo", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-56.7835503, 44.1566734, 7897.83008, -0.999473155, -0.00101083843, -0.0324414074, 0.00685910136, 0.970363021, -0.241554469, 0.0317241177, -0.241649732, -0.969844818)
+end)
+
+
+Section:NewButton("11 локация", "ButtonInfo", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-47.5012398, 43.0896759, 8538.2832, -0.999422193, -0.00843359809, -0.0329271816, 0.00223600585, 0.950318158, -0.311272174, 0.0339164436, -0.311165929, -0.949750185)
+end)
+
+
+
+
+
+Section:NewButton("Финал", "ButtonInfo", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(21.4862995, 414.507019, 8458.35352, -0.952588439, 1.16790053e-08, 0.304261833, 3.0552215e-08, 1, 5.72687107e-08, -0.304261833, 6.38493844e-08, -0.952588439)
+end)
+
+
+
+Section:NewTextBox("Информация о тп", "Телепорты могут работать не стабильно", function(txt)
+	print(txt)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- Игрок
+local Tab = Window:NewTab("Игрок")
+
+local Section = Tab:NewSection("Физ. свойста")
+
+Section:NewSlider("Speed", "Не работает если оторвало ногу", 500, 0, function(s)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+	
+	if s == 0 then
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+		end
+end)
+
+Section:NewSlider("Jump", "Не работает если оторвало ногу", 500, 0, function(s)
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+	if s == 0 then
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+		end
+end)
